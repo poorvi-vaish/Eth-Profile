@@ -1,3 +1,4 @@
+
 export const statusDetails = [
   {
     "img": "/images/frame1.png",
