@@ -2,13 +2,23 @@ import {skills} from "@/assets/skills";
 
 import Image from "next/image";
 
+let imagePath = '';
+
+if(process.env.NODE_ENV === 'production') {
+   imagePath = 'https://poorvi-vaish.github.io/Eth-Profile/images';
+ } else {
+   imagePath = '/images';
+ }
+
 const ProfileCard = ({images}: any) => {
+
+  console.log(images);
   return (
     <div className="bg-card rounded-2xl w-96 p-6 flex flex-col gap-y-12">
       <div className="flex items-center gap-4">
         <div className="flex flex-col items-center gap-4">
           <Image
-            src="/images/Rectangle18.png"
+            src={`${imagePath}/Rectangle18.png`}
             alt="profile"
             width={100}
             height={100}
