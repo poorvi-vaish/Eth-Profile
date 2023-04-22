@@ -1,9 +1,8 @@
-import { images } from "@/assets/communities";
 import {skills} from "@/assets/skills";
 
 import Image from "next/image";
 
-const ProfileCard = () => {
+const ProfileCard = ({images}: any) => {
   return (
     <div className="bg-card rounded-2xl w-96 p-6 flex flex-col gap-y-12">
       <div className="flex items-center gap-4">
