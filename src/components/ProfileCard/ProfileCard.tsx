@@ -5,9 +5,9 @@ import Image from "next/image";
 let imagePath = '';
 
 if(process.env.NODE_ENV === 'production') {
-   imagePath = 'https://poorvi-vaish.github.io/Eth-Profile/images';
+   imagePath = 'https://poorvi-vaish.github.io/Eth-Profile';
  } else {
-   imagePath = '/images';
+   imagePath = '';
  }
 
 const ProfileCard = ({images}: any) => {
@@ -18,7 +18,7 @@ const ProfileCard = ({images}: any) => {
       <div className="flex items-center gap-4">
         <div className="flex flex-col items-center gap-4">
           <Image
-            src={`${imagePath}/Rectangle18.png`}
+            src={`${imagePath}/images/Rectangle18.png`}
             alt="profile"
             width={100}
             height={100}
@@ -37,7 +37,7 @@ const ProfileCard = ({images}: any) => {
       <div className="flex gap-2">
         <div className="flex bg-[#1a1a1a] rounded-full p-2 items-center">
           <Image
-            src="/images/Vector.png"
+            src={`${imagePath}/images/Vector.png`}
             alt="twitter"
             width={30}
             height={30}
@@ -46,7 +46,7 @@ const ProfileCard = ({images}: any) => {
         </div>
         <div className="bg-[#1a1a1a] rounded-full p-1">
           <Image
-            src="/images/website.png"
+            src={`${imagePath}/images/website.png`}
             alt="website"
             width={30}
             height={30}

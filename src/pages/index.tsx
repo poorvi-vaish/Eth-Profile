@@ -4,7 +4,7 @@ import { userDetails } from "@/assets/userDetails";
 import { ProfileCard, StatusCard, UserCard } from "@/components";
 import { images } from '@/assets/communities';
 
-export default function Home({images, statusDetails, userDetails}: any) {
+export default function Home() {
   return (
     <>
       <Head>
@@ -29,14 +29,4 @@ export default function Home({images, statusDetails, userDetails}: any) {
       </main>
     </>
   );
-}
-
-export const getStaticProps = async () => {
-  return {
-    props: {
-      images,
-      statusDetails,
-      userDetails
-    },
-  };
 }

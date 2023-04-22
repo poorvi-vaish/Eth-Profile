@@ -1,7 +1,14 @@
+let imagePath: string;
+if(process.env.NODE_ENV === 'production') {
+  imagePath = 'https://poorvi-vaish.github.io/Eth-Profile';
+} else {
+  imagePath = '';
+}
+
 
 export const statusDetails = [
   {
-    "img": "/images/frame1.png",
+    "img": `${imagePath}/images/frame1.png`,
     "name": "ENS Linked",
     "status": "ENS Linked",
     "username": "diangaling.eth",
@@ -12,7 +19,7 @@ export const statusDetails = [
     "grColor": "grBlue"
   },
   {
-    "img": "/images/frame2.png",
+    "img": `${imagePath}/images/frame2.png`,
     "name": "Best Flip",
     "status": "Sold",
     "username": "CryptoPunk #1234",
@@ -23,7 +30,7 @@ export const statusDetails = [
     "grColor": "grYellow"
   },
   {
-    "img": "/images/frame3.png",
+    "img": `${imagePath}/images/frame3.png`,
     "name": "Should Have...",
     "status": "Mint",
     "username": "Rare Apepe #1234",
@@ -34,7 +41,7 @@ export const statusDetails = [
     "grColor": "grMint"
   },
   {
-    "img": "/images/frame4.png",
+    "img": `${imagePath}/images/frame4.png`,
     "name": "First NFT Bought",
     "status": "Bought",
     "username": "BAYC #1234",
@@ -45,7 +52,7 @@ export const statusDetails = [
     "grColor": "grBlue"
   },
   {
-    "img": "/images/frame5.png",
+    "img": `${imagePath}/images/frame5.png`,
     "name": "Paper Handed",
     "status": "Sold",
     "username": "Moonbirds #1234",

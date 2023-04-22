@@ -1,7 +1,0 @@
-const StatusList = () => {
-  return (
-    <>
-      
-    </>
-  )
-} 
